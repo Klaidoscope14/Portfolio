@@ -1,0 +1,194 @@
+"use client"
+
+import { motion, useInView } from "framer-motion"
+import { useRef } from "react"
+import { Code, Database, Palette, Globe, Smartphone, Cloud, GitBranch, Cpu, Layers, Zap } from "lucide-react"
+import FloatingDock, { LanguageDock } from "./aceternity/FloatingDock"
+import AnimatedText from "./aceternity/AnimatedText"
+import Image from "next/image"
+import { LucideIcon } from "lucide-react"
+import type { ReactElement } from "react"
+import { Badge } from "@/components/ui/badge"
+import FloatingCard from "./aceternity/FloatingCard"
+import { PinContainer } from "./aceternity/AnimatedPin"
+
+type IconType = LucideIcon | (() => ReactElement)
+
+interface SkillItem {
+  name: string
+  icon: IconType | string
+  color: string
+  link?: string
+}
+
+export default function SkillsSection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  const frontendSkills = [
+    { title: "React", icon: () => <Image src="/React.svg" alt="React" width={28} height={28} />, level: 95 },
+    { title: "TypeScript", icon: () => <Image src="/Ts.svg" alt="TypeScript" width={28} height={28} />, level: 90 },
+    { title: "Next.js", icon: () => <Image src="/nextjs.svg" alt="Next.js" width={28} height={28} />, level: 88 },
+    { title: "Three.js", icon: () => <Image src="/threejs.svg" alt="Three.js" width={28} height={28} />, level: 85 },
+    { title: "HTML", icon: () => <Image src="/HTML.svg" alt="HTML" width={28} height={28} />, level: 98 },
+    { title: "CSS", icon: () => <Image src="/CSS.svg" alt="CSS" width={28} height={28} />, level: 95 },
+    { title: "JavaScript", icon: () => <Image src="/Js.svg" alt="JavaScript" width={28} height={28} />, level: 93 },
+    { title: "Sass", icon: () => <Image src="/Sass.svg" alt="Sass" width={28} height={28} />, level: 88 },
+    { title: "Tailwind", icon: () => <Image src="/TailwindCSS.svg" alt="Tailwind" width={28} height={28} />, level: 92 },
+  ]
+
+  const backendSkills = [
+    { title: "Node.js", icon: () => <Image src="/Nodejs.svg" alt="Node.js" width={28} height={28} />, level: 88 },
+    { title: "Express.js", icon: () => <Image src="/Express.svg" alt="Express.js" width={28} height={28} />, level: 90 },
+    { title: "Python", icon: () => <Image src="/Python.svg" alt="Python" width={28} height={28} />, level: 85 },
+    { title: "PostgreSQL", icon: () => <Image src="/PostGressSQL.svg" alt="PostgreSQL" width={28} height={28} />, level: 82 },
+    { title: "MongoDB", icon: () => <Image src="/MongoDB.svg" alt="MongoDB" width={28} height={28} />, level: 80 },
+  ]
+
+  const toolsSkills = [
+    { title: "Git", icon: () => <Image src="/Git.svg" alt="Git" width={28} height={28} />, level: 95 },
+    { title: "GitHub", icon: () => <Image src="/Github.svg" alt="GitHub" width={28} height={28} />, level: 95 },
+    { title: "Vercel", icon: () => <Image src="/Vercel.svg" alt="Vercel" width={28} height={28} />, level: 95 },
+    { title: "Figma", icon: () => <Image src="/Figma.svg" alt="Figma" width={28} height={28} />, level: 85 },
+    { title: "Android Studio", icon: () => <Image src="/Android.svg" alt="Android Studio" width={28} height={28} />, level: 78 }
+  ]
+
+  const additionalSkills: SkillItem[] = [
+    { name: "Performance Optimization", icon: Zap, color: "from-yellow-400 to-orange-500" },
+    { name: "Responsive Design", icon: Smartphone, color: "from-green-400 to-blue-500" },
+    { 
+      name: "LeetCode", 
+      icon: () => <Image src="/leetcode.svg" alt="LeetCode" width={32} height={32} />, 
+      color: "from-orange-400 to-orange-600",
+      link: "https://leetcode.com/your-username"
+    },
+    { 
+      name: "Codeforces", 
+      icon: () => <Image src="/codeforces-icon-filled-256.png" alt="Codeforces" width={32} height={32} />, 
+      color: "from-red-400 to-red-600",
+      link: "https://codeforces.com/profile/your-username"
+    },
+  ]
+
+  const IconWrapper = ({ icon }: { icon: IconType }) => {
+    if (typeof icon === 'function') {
+      return icon()
+    }
+    const Icon = icon
+    return <Icon className="w-full h-full" />
+  }
+
+  return (
+    <section id="skills" className="py-20 px-6 relative">
+      <div className="container mx-auto max-w-6xl" ref={ref}>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <AnimatedText
+            text="Skills & Expertise"
+            className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent"
+          />
+          <AnimatedText
+            text="Interactive skill showcase with floating dock interface"
+            className="text-xl text-gray-300 max-w-3xl mx-auto"
+            delay={0.3}
+          />
+        </motion.div>
+
+        {/* Programming Languages */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="text-center mb-16"
+        >
+          <h3 className="text-2xl font-bold mb-8 text-emerald-400">Programming Languages</h3>
+          <div className="flex justify-center">
+            <LanguageDock />
+          </div>
+        </motion.div>
+
+        <div className="space-y-16">
+          {/* Frontend Skills */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-center"
+          >
+            <h3 className="text-2xl font-bold mb-8 text-cyan-400">Frontend Development</h3>
+            <div className="flex justify-center">
+              <FloatingDock items={frontendSkills} />
+            </div>
+          </motion.div>
+
+          {/* Backend Skills */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-center"
+          >
+            <h3 className="text-2xl font-bold mb-8 text-purple-400">Backend Development</h3>
+            <div className="flex justify-center">
+              <FloatingDock items={backendSkills} />
+            </div>
+          </motion.div>
+
+          {/* Tools & Others */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="text-center"
+          >
+            <h3 className="text-2xl font-bold mb-8 text-pink-400">Tools & Technologies</h3>
+            <div className="flex justify-center">
+              <FloatingDock items={toolsSkills} />
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Additional Skills */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+          {additionalSkills.map((skill, index) => (
+            <PinContainer key={skill.name} title={skill.name} href={skill.link}>
+              <FloatingCard>
+                <div className="text-center">
+                  {typeof skill.icon === "string" ? (
+                    <div className="relative w-8 h-8 mx-auto mb-4">
+                      <Image
+                        src={skill.icon}
+                        alt={skill.name}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-8 h-8 mx-auto mb-4 text-cyan-400">
+                      <IconWrapper icon={skill.icon} />
+                    </div>
+                  )}
+                  <h4 className="font-semibold mb-2 text-white">{skill.name}</h4>
+                  {skill.link && (
+                    <a
+                      href={skill.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-cyan-400 hover:text-cyan-300 transition-colors"
+                    >
+                      View Profile
+                    </a>
+                  )}
+                </div>
+              </FloatingCard>
+            </PinContainer>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
