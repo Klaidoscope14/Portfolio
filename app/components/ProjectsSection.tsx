@@ -73,27 +73,28 @@ export default function ProjectsSection() {
         </motion.div>
 
         <div className="relative">
-          <TracingBeam className="absolute -left-50 top-1/2 transform -translate-y-1/2" />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {projects.map((project, index) => (
-              <motion.div
-                key={project.title}
-                initial={{ opacity: 0, y: 50 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                className="w-full"
-              >
-                <ThreeDCard
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  techStack={project.technologies}
-                  githubLink={project.githubUrl}
-                  demoLink={project.liveUrl}
-                />
-              </motion.div>
-            ))}
-          </div>
+          <TracingBeam className="absolute -left-50 top-1/2 transform -translate-y-1/2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {projects.map((project, index) => (
+                <motion.div
+                  key={project.title}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  className="w-full"
+                >
+                  <ThreeDCard
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    techStack={project.technologies}
+                    githubLink={project.githubUrl || ""}
+                    demoLink={project.liveUrl || ""}
+                  />
+                </motion.div>
+              ))}
+            </div>
+          </TracingBeam>
         </div>
 
         <motion.div
