@@ -1,14 +1,11 @@
 "use client"
-
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import { Code, Database, Palette, Globe, Smartphone, Cloud, GitBranch, Cpu, Layers, Zap } from "lucide-react"
 import FloatingDock, { LanguageDock } from "./aceternity/FloatingDock"
 import AnimatedText from "./aceternity/AnimatedText"
 import Image from "next/image"
 import { LucideIcon } from "lucide-react"
 import type { ReactElement } from "react"
-import { Badge } from "@/components/ui/badge"
 import FloatingCard from "./aceternity/FloatingCard"
 import { PinContainer } from "./aceternity/AnimatedPin"
 
@@ -26,21 +23,18 @@ export default function SkillsSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const frontendSkills = [
-    { title: "React", icon: () => <Image src="/React.svg" alt="React" width={28} height={28} />, level: 95 },
-    { title: "TypeScript", icon: () => <Image src="/Ts.svg" alt="TypeScript" width={28} height={28} />, level: 90 },
-    { title: "Next.js", icon: () => <Image src="/nextjs.svg" alt="Next.js" width={28} height={28} />, level: 88 },
-    { title: "Three.js", icon: () => <Image src="/threejs.svg" alt="Three.js" width={28} height={28} />, level: 85 },
     { title: "HTML", icon: () => <Image src="/HTML.svg" alt="HTML" width={28} height={28} />, level: 98 },
     { title: "CSS", icon: () => <Image src="/CSS.svg" alt="CSS" width={28} height={28} />, level: 95 },
-    { title: "JavaScript", icon: () => <Image src="/Js.svg" alt="JavaScript" width={28} height={28} />, level: 93 },
     { title: "Sass", icon: () => <Image src="/Sass.svg" alt="Sass" width={28} height={28} />, level: 88 },
     { title: "Tailwind", icon: () => <Image src="/TailwindCSS.svg" alt="Tailwind" width={28} height={28} />, level: 92 },
+    { title: "Three.js", icon: () => <Image src="/threejs.svg" alt="Three.js" width={28} height={28} />, level: 85 },
+    { title: "React", icon: () => <Image src="/React.svg" alt="React" width={28} height={28} />, level: 95 },
+    { title: "Next.js", icon: () => <Image src="/nextjs.svg" alt="Next.js" width={28} height={28} />, level: 88 },
   ]
 
   const backendSkills = [
     { title: "Node.js", icon: () => <Image src="/Nodejs.svg" alt="Node.js" width={28} height={28} />, level: 88 },
     { title: "Express.js", icon: () => <Image src="/Express.svg" alt="Express.js" width={28} height={28} />, level: 90 },
-    { title: "Python", icon: () => <Image src="/Python.svg" alt="Python" width={28} height={28} />, level: 85 },
     { title: "PostgreSQL", icon: () => <Image src="/PostGressSQL.svg" alt="PostgreSQL" width={28} height={28} />, level: 82 },
     { title: "MongoDB", icon: () => <Image src="/MongoDB.svg" alt="MongoDB" width={28} height={28} />, level: 80 },
   ]
@@ -50,12 +44,14 @@ export default function SkillsSection() {
     { title: "GitHub", icon: () => <Image src="/Github.svg" alt="GitHub" width={28} height={28} />, level: 95 },
     { title: "Vercel", icon: () => <Image src="/Vercel.svg" alt="Vercel" width={28} height={28} />, level: 95 },
     { title: "Figma", icon: () => <Image src="/Figma.svg" alt="Figma" width={28} height={28} />, level: 85 },
-    { title: "Android Studio", icon: () => <Image src="/Android.svg" alt="Android Studio" width={28} height={28} />, level: 78 }
+    { title: "Android Studio", icon: () => <Image src="/Android.svg" alt="Android Studio" width={28} height={28} />, level: 78 } ,
+    { title: "Firebase", icon: () => <Image src="/Firebase.svg" alt="Firebase" width={28} height={28} />, level: 80 } ,
+    { title: "Socket.io", icon: () => <Image src="/Socket.svg" alt="Socket" width={28} height={28} />, level: 85 }
   ]
 
   const additionalSkills: SkillItem[] = [
-    { name: "Performance Optimization", icon: Zap, color: "from-yellow-400 to-orange-500" },
-    { name: "Responsive Design", icon: Smartphone, color: "from-green-400 to-blue-500" },
+    // { name: "Performance Optimization", icon: Zap, color: "from-yellow-400 to-orange-500" },
+    // { name: "Responsive Design", icon: Smartphone, color: "from-green-400 to-blue-500" },
     { 
       name: "LeetCode", 
       icon: () => <Image src="/leetcode.svg" alt="LeetCode" width={32} height={32} />, 
@@ -153,7 +149,7 @@ export default function SkillsSection() {
         </div>
 
         {/* Additional Skills */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,2fr))] gap-4 mt-8 justify-center">
           {additionalSkills.map((skill, index) => (
             <PinContainer key={skill.name} title={skill.name} href={skill.link}>
               <FloatingCard>

@@ -68,7 +68,7 @@ function ParticleField() {
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-visible">
       <div className="absolute inset-0 z-0">
         <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
           <ambientLight intensity={0.8} />
@@ -81,7 +81,7 @@ export default function HeroSection() {
         </Canvas>
       </div>
 
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -93,7 +93,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-center md:text-left"
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-7xl font-bold flex justify-center align-middle mb-9 bg-gradient-to-r from-violet-900 to-teal-600 bg-clip-text text-transparent font-[cursive]">
               Hi, I'm Chaitanya
               <span className="relative inline-block group">
                 <motion.span
@@ -104,18 +104,11 @@ export default function HeroSection() {
                 />
               </span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-800">
-              A {""}
-              <span className="relative inline-block group">
-                <span className="relative z-10">Full Stack Developer</span>
-                <motion.span
-                  className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-gray-900 to-gray-700"
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                  transition={{ duration: 0.5, delay: 1 }}
-                />
-              </span>
-              {" "}crafting digital experiences
+            <p className="text-2xl bg-gradient-to-r from-teal-600 to-violet-900 bg-clip-text text-transparent font-semibold font-[cursive]">
+              Architecting seamless digital experiences, one optimized algorithm at a
+            </p>
+            <p className="text-2xl flex justify-center align-middle mb-8 bg-gradient-to-r from-teal-600 to-violet-900 bg-clip-text text-transparent font-semibold font-[cursive]">
+              time
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
               <GlowingButton
@@ -148,8 +141,8 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 1.4 }}
           >
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
+              { icon: Github, href: "https://github.com/Klaidoscope14", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/chaitanya-saagar-476b562a2/", label: "LinkedIn" },
               { icon: Mail, href: "#", label: "Email" },
             ].map((social, index) => (
               <motion.a
