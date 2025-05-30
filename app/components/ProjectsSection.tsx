@@ -1,16 +1,10 @@
 "use client"
-
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import { Badge } from "@/components/ui/badge"
-import { ExternalLink, Github } from "lucide-react"
-import Image from "next/image"
 import ThreeDCard from "./aceternity/ThreeDCard"
 import AnimatedText from "./aceternity/AnimatedText"
 import GlowingButton from "./aceternity/GlowingButton"
 import { TracingBeam } from "./aceternity/TracingBeam"
-import { PinContainer } from "./aceternity/AnimatedPin"
-import FloatingCard from "./aceternity/FloatingCard"
 
 export default function ProjectsSection() {
   const ref = useRef(null)
@@ -18,43 +12,42 @@ export default function ProjectsSection() {
 
   const projects = [
     {
-      title: "3D Portfolio Website",
+      title: "SysHealth 🧬",
       description:
-        "An immersive portfolio website built with Three.js and React, featuring interactive 3D elements and smooth animations.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React", "Three.js", "Framer Motion", "TypeScript"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "An interface that allows users to view over 12 real-time system metrics (including CPU usage, memory consumption, and network throughput) in real time.",
+      image: "/SysHealth.png",
+      technologies: ["Tailwind CSS" ,"React", "TypeScript" , "Next.js" ,"Node.js" , "Express.js" , "RESTful APIs"],
+      // liveUrl: "#",
+      githubUrl: "https://github.com/Klaidoscope14/SysHealth",
       featured: true,
     },
     {
-      title: "E-commerce Platform",
+      title: "Chatify 💻",
       description:
-        "A full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "A real-time chat application that allows users to send and receive messages in real time. Employs Socket.io for real-time comms and MongoDB for data storage.",
+      image: "/Chatify.png",
+      technologies: ["Tailwind CSS" , "JavaScript", "React", "Node.js", "Express.js" , "Socket.io" , "MongoDB"],
+      // liveUrl: "#",
+      githubUrl: "https://github.com/Klaidoscope14/Chatify",
       featured: true,
     },
     {
-      title: "Data Visualization Dashboard",
+      title: "E-Cell Alumni Connect 🎓",
       description:
-        "Interactive dashboard for data visualization with real-time updates, charts, and analytics for business intelligence.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Vue.js", "D3.js", "Python", "FastAPI"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "An outreach platform that allows alumni of the college to connect with E-Cell, IIT Patna. From here , they can participate in guest talks , workshops and increase interaction with the students. Handled 200+ users.",
+      image: "/E-Cell Alum Connect.png",
+      technologies: ["Tailwind CSS" , "Three.js" , "JavaScript", "React", "Airtable" , "Vercel"],
+      liveUrl: "https://e-cell-alumni-connect.vercel.app/",
+      githubUrl: "https://github.com/Klaidoscope14/E-Cell-Alumni-Connect",
       featured: false,
     },
     {
-      title: "Blockchain Voting System",
+      title: "More Coming Soon! ✌🏼",
       description:
-        "Decentralized voting platform ensuring transparency and security through blockchain technology and smart contracts.",
+        "Upcoming projects will be added here soon!",
       image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Solidity", "Web3.js", "React", "Ethereum"],
-      liveUrl: "#",
-      githubUrl: "#",
+      // liveUrl: "#",
+      // githubUrl: "#",
       featured: false,
     },
   ]
@@ -80,7 +73,7 @@ export default function ProjectsSection() {
         </motion.div>
 
         <div className="relative">
-          <TracingBeam className="absolute -left-20 top-1/2 transform -translate-y-1/2" />
+          <TracingBeam className="absolute -left-50 top-1/2 transform -translate-y-1/2" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {projects.map((project, index) => (
               <motion.div
@@ -107,7 +100,7 @@ export default function ProjectsSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center mt-16"
+          className="text-center mt-20"
         >
           <GlowingButton variant="secondary" size="md">
             View All Projects

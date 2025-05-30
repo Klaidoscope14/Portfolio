@@ -25,7 +25,22 @@ export default function ExperienceSection() {
         "Architected and deployed microservices handling 1M+ requests daily",
       ],
       technologies: ["React", "Node.js", "TypeScript", "AWS", "Docker", "PostgreSQL"],
-      link: "https://techcorp.com",
+      link: "https://anweshaaa.vercel.app/",
+    } ,
+    {
+      title: "Full-Stack Developer",
+      company: "Tradylytics",
+      location: "Agra , India",
+      period: "May 2025",
+      description:
+        "Working on the frontend of a web application that allows users to analyze stock market data and make investment decisions. ",
+      achievements: [
+        "Worked on the frontend of a web application that allows users to analyze stock market data and make investment decisions.",
+        "Worked on the backend of a web application that allows users to analyze stock market data and make investment decisions.",
+        "Worked on the deployment of a web application that allows users to analyze stock market data and make investment decisions.",
+      ],
+      technologies: ["Sass" , "Material UI" , "Shimmer UI", "React", "TypeScript" ,"Node.js"],
+      link: "https://www.tradylytics.in/",
     }
   ]
 
@@ -50,7 +65,6 @@ export default function ExperienceSection() {
         </motion.div>
 
         <div className="relative">
-          {/* Timeline line */}
           <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyan-500 via-purple-500 to-pink-500" />
 
           <div className="space-y-12">

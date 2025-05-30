@@ -39,25 +39,23 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      value: "john.doe@example.com",
-      href: "mailto:john.doe@example.com",
+      value: "saagarchaitanya80@gmail.com",
+      href: "mailto:saagarchaitanya80@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 6204 250 124",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
-      href: "#",
+      value: "Patna, India",
     },
   ]
 
   return (
-    <section id="contact" className="py-20 px-6 relative">
+    <section id="contact" className="py-20 px-6 relative mt-15">
       <div className="container mx-auto max-w-6xl" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -86,10 +84,10 @@ export default function ContactSection() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold mb-8 text-cyan-400">Let's Connect</h3>
+            <h3 className="text-2xl font-bold mb-8 text-cyan-400">Let's Connect and Innovate</h3>
             <p className="text-gray-300 mb-8 leading-relaxed">
               I'm always excited to work on new projects and collaborate with creative minds. Whether you have a
-              specific project in mind or just want to chat about technology, feel free to reach out!
+              specific project in mind or are impressed by my work and want to collaborate, feel free to reach out!
             </p>
 
             <div className="space-y-6">
@@ -161,7 +159,7 @@ export default function ContactSection() {
                 </div>
 
                 <GlowingButton variant="primary" size="lg" className="w-full">
-                  <Send className="w-4 h-4 mr-2" />
+                  <Send className="w-2 h-2 mr-2" />
                   Send Message
                 </GlowingButton>
               </form>

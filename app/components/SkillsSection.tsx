@@ -159,7 +159,7 @@ export default function SkillsSection() {
               <FloatingCard>
                 <div className="text-center">
                   {typeof skill.icon === "string" ? (
-                    <div className="relative w-8 h-8 mx-auto mb-4">
+                    <div className="relative w-10 h-10 mx-auto mb-4">
                       <Image
                         src={skill.icon}
                         alt={skill.name}

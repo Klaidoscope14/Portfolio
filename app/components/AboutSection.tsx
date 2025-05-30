@@ -25,7 +25,7 @@ export default function AboutSection() {
     },
     {
       icon: Zap,
-      title: "Performance",
+      title: "Performance Optimization",
       description: "Optimizing applications for speed, accessibility, and user experience.",
     },
     {
@@ -63,16 +63,19 @@ export default function AboutSection() {
           >
             <h3 className="text-2xl font-bold mb-6 text-cyan-400">My Journey</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Started as a curious student fascinated by the intersection of technology and creativity. Over the years,
-              I've worked with startups and established companies, building everything from simple websites to complex
-              web applications.
+              Currently doing my B.Tech in Computer Science and Engineering from IIT Patna. Started with curiosity fascinated by the intersection of technology and creativity. Currently
+              interning in a startup, building everything from simple websites to complex
+              web applications and backend systems.
+            </p>
+            <p className="text-gray-300 mb-6 leading-relaxed">
+              Apart from Web development , I also practice competetive programming and Data Structures and Algorithm concepts. My current rating in Codeforces is 1416 , and i regularly like giving contests on LeetCode.
             </p>
             <p className="text-gray-300 mb-6 leading-relaxed">
               I believe in continuous learning and staying ahead of the curve. When I'm not coding, you'll find me
-              exploring new frameworks, contributing to open source, or experimenting with 3D graphics and animations.
+              delving into CS Core (Networking Systems , Operating Systems and sometimes financial algorithms) , exploring new frameworks, contributing to open source, or experimenting with 3D graphics and animations. Hobbies include routine powerlifting.
             </p>
             <div className="flex flex-wrap gap-2">
-              {["React", "TypeScript", "Three.js", "Next.js", "Node.js", "Python"].map((tech) => (
+              {["Front-end Development", "Back-end Development", "Competitive Programming", "Ml Enthusiast"].map((tech) => (
                 <Badge key={tech} variant="secondary" className="bg-purple-500/20 text-purple-300 border-purple-500/30">
                   {tech}
                 </Badge>

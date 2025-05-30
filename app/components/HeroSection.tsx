@@ -1,13 +1,11 @@
 "use client"
-
 import { useRef } from "react"
-import { Canvas, useFrame, useLoader } from "@react-three/fiber"
+import { Canvas, useFrame } from "@react-three/fiber"
 import { Sphere, MeshDistortMaterial, Float, OrbitControls, Environment } from "@react-three/drei"
 import { motion } from "framer-motion"
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
 import * as THREE from "three"
 import GlowingButton from "./aceternity/GlowingButton"
-import AnimatedText from "./aceternity/AnimatedText"
 
 function AnimatedSphere() {
   const meshRef = useRef<THREE.Mesh>(null)
@@ -71,7 +69,6 @@ function ParticleField() {
 export default function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* 3D Background */}
       <div className="absolute inset-0 z-0">
         <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
           <ambientLight intensity={0.8} />
@@ -84,7 +81,6 @@ export default function HeroSection() {
         </Canvas>
       </div>
 
-      {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -172,13 +168,13 @@ export default function HeroSection() {
           </motion.div>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
         >
           <ArrowDown className="w-6 h-6 text-gray-400" />
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )

@@ -18,42 +18,30 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
-      {/* Aceternity-style Grid Background */}
       <GridBackground />
 
-      {/* Spotlight Effect */}
       <SpotlightEffect />
 
-      {/* Animated Background */}
       <motion.div className="fixed inset-0 opacity-30" style={{ y: backgroundY }}>
         <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.1),transparent_50%)]" />
       </motion.div>
 
-      {/* Floating Navigation */}
       <FloatingNavbar />
 
-      {/* Tracing Beam Wrapper */}
       <TracingBeam>
-        {/* Hero Section */}
         <HeroSection />
 
-        {/* Lamp Section */}
         <LampSection />
 
-        {/* About Section */}
         <AboutSection />
 
-        {/* Experience Section */}
         <ExperienceSection />
 
-        {/* Skills Section */}
         <SkillsSection />
 
-        {/* Projects Section */}
         <ProjectsSection />
 
-        {/* Contact Section */}
         <ContactSection />
       </TracingBeam>
     </div>
