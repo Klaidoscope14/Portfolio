@@ -6,7 +6,6 @@ import ExperienceSection from "./components/ExperienceSection"
 import SkillsSection from "./components/SkillsSection"
 import ProjectsSection from "./components/ProjectsSection"
 import ContactSection from "./components/ContactSection"
-import LampSection from "./components/LampSection"
 import FloatingNavbar from "./components/aceternity/FloatingNavbar"
 import SpotlightEffect from "./components/aceternity/SpotlightEffect"
 import GridBackground from "./components/aceternity/GridBackground"
@@ -31,8 +30,6 @@ export default function Portfolio() {
 
       <TracingBeam>
         <HeroSection />
-
-        <LampSection />
 
         <AboutSection />
 

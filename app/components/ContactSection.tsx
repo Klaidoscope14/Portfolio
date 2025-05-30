@@ -1,7 +1,5 @@
 "use client"
-
 import type React from "react"
-
 import { motion, useInView } from "framer-motion"
 import { useRef, useState } from "react"
 import { Input } from "@/components/ui/input"
@@ -11,7 +9,6 @@ import FloatingCard from "./aceternity/FloatingCard"
 import AnimatedText from "./aceternity/AnimatedText"
 import GlowingButton from "./aceternity/GlowingButton"
 import { LampDemo } from "./aceternity/Lamp"
-import { SparklesCore } from "./aceternity/sparkles"
 
 export default function ContactSection() {
   const ref = useRef(null)
@@ -24,7 +21,6 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
     console.log("Form submitted:", formData)
   }
 
@@ -78,7 +74,6 @@ export default function ContactSection() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -115,7 +110,6 @@ export default function ContactSection() {
             </div>
           </motion.div>
 
-          {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}

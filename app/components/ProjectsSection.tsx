@@ -15,7 +15,7 @@ export default function ProjectsSection() {
       title: "SysHealth 🧬",
       description:
         "An interface that allows users to view over 12 real-time system metrics (including CPU usage, memory consumption, and network throughput) in real time.",
-      image: "/SysHealth.png",
+      image: "/Projects/SysHealth.png",
       technologies: ["Tailwind CSS" ,"React", "TypeScript" , "Next.js" ,"Node.js" , "Express.js" , "RESTful APIs"],
       // liveUrl: "#",
       githubUrl: "https://github.com/Klaidoscope14/SysHealth",
@@ -25,7 +25,7 @@ export default function ProjectsSection() {
       title: "Chatify 💻",
       description:
         "A real-time chat application that allows users to send and receive messages in real time. Employs Socket.io for real-time comms and MongoDB for data storage.",
-      image: "/Chatify.png",
+      image: "/Projects/Chatify.png",
       technologies: ["Tailwind CSS" , "JavaScript", "React", "Node.js", "Express.js" , "Socket.io" , "MongoDB"],
       // liveUrl: "#",
       githubUrl: "https://github.com/Klaidoscope14/Chatify",
@@ -35,7 +35,7 @@ export default function ProjectsSection() {
       title: "E-Cell Alumni Connect 🎓",
       description:
         "An outreach platform that allows alumni of the college to connect with E-Cell, IIT Patna. From here , they can participate in guest talks , workshops and increase interaction with the students. Handled 200+ users.",
-      image: "/E-Cell Alum Connect.png",
+      image: "/Projects/E-Cell Alum Connect.png",
       technologies: ["Tailwind CSS" , "Three.js" , "JavaScript", "React", "Airtable" , "Vercel"],
       liveUrl: "https://e-cell-alumni-connect.vercel.app/",
       githubUrl: "https://github.com/Klaidoscope14/E-Cell-Alumni-Connect",
@@ -45,7 +45,7 @@ export default function ProjectsSection() {
       title: "More Coming Soon! ✌🏼",
       description:
         "Upcoming projects will be added here soon!",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/Plus.svg",
       // liveUrl: "#",
       // githubUrl: "#",
       featured: false,

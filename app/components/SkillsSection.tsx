@@ -23,33 +23,33 @@ export default function SkillsSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const frontendSkills = [
-    { title: "HTML", icon: () => <Image src="/HTML.svg" alt="HTML" width={28} height={28} />, level: 98 },
-    { title: "CSS", icon: () => <Image src="/CSS.svg" alt="CSS" width={28} height={28} />, level: 95 },
-    { title: "Sass", icon: () => <Image src="/Sass.svg" alt="Sass" width={28} height={28} />, level: 88 },
+    { title: "HTML", icon: () => <Image src="Skills/Frontend/HTML.svg" alt="HTML" width={28} height={28} />, level: 98 },
+    { title: "CSS", icon: () => <Image src="Skills/Frontend/CSS.svg" alt="CSS" width={28} height={28} />, level: 95 },
+    { title: "Sass", icon: () => <Image src="Skills/Frontend/Sass.svg" alt="Sass" width={28} height={28} />, level: 88 },
     { title: "Material UI", icon: () => <Image src="Skills/Frontend/MaterialUI.svg" alt="MUI" width={28} height={28} />, level: 90 },
-    { title: "Tailwind", icon: () => <Image src="/TailwindCSS.svg" alt="Tailwind" width={28} height={28} />, level: 92 },
-    { title: "Three.js", icon: () => <Image src="/threejs.svg" alt="Three.js" width={28} height={28} />, level: 85 },
-    { title: "React", icon: () => <Image src="/React.svg" alt="React" width={28} height={28} />, level: 95 },
-    { title: "Next.js", icon: () => <Image src="/nextjs.svg" alt="Next.js" width={28} height={28} />, level: 88 },
+    { title: "Tailwind", icon: () => <Image src="Skills/Frontend/TailwindCSS.svg" alt="Tailwind" width={28} height={28} />, level: 92 },
+    { title: "Three.js", icon: () => <Image src="Skills/Frontend/threejs.svg" alt="Three.js" width={28} height={28} />, level: 85 },
+    { title: "React", icon: () => <Image src="Skills/Frontend/React.svg" alt="React" width={28} height={28} />, level: 95 },
+    { title: "Next.js", icon: () => <Image src="Skills/Frontend/nextjs.svg" alt="Next.js" width={28} height={28} />, level: 88 },
   ]
 
   const backendSkills = [
-    { title: "Node.js", icon: () => <Image src="/Nodejs.svg" alt="Node.js" width={28} height={28} />, level: 88 },
-    { title: "Express.js", icon: () => <Image src="/Express.svg" alt="Express.js" width={28} height={28} />, level: 90 },
-    { title: "PostgreSQL", icon: () => <Image src="/PostGressSQL.svg" alt="PostgreSQL" width={28} height={28} />, level: 82 },
-    { title: "MongoDB", icon: () => <Image src="/MongoDB.svg" alt="MongoDB" width={28} height={28} />, level: 80 },
+    { title: "Node.js", icon: () => <Image src="Skills/Backend/Nodejs.svg" alt="Node.js" width={28} height={28} />, level: 88 },
+    { title: "Express.js", icon: () => <Image src="Skills/Backend/Express.svg" alt="Express.js" width={28} height={28} />, level: 90 },
+    { title: "PostgreSQL", icon: () => <Image src="Skills/Backend/PostGressSQL.svg" alt="PostgreSQL" width={28} height={28} />, level: 82 },
+    { title: "MongoDB", icon: () => <Image src="Skills/Backend/MongoDB.svg" alt="MongoDB" width={28} height={28} />, level: 80 },
     { title: "MySQL", icon: () => <Image src="Skills/Backend/MySQL.svg" alt="MySQL" width={28} height={28} />, level: 75 },
   ]
 
   const toolsSkills = [
-    { title: "Git", icon: () => <Image src="/Git.svg" alt="Git" width={28} height={28} />, level: 95 },
-    { title: "GitHub", icon: () => <Image src="/Github.svg" alt="GitHub" width={28} height={28} />, level: 95 },
-    { title: "Vercel", icon: () => <Image src="/Vercel.svg" alt="Vercel" width={28} height={28} />, level: 95 },
+    { title: "Git", icon: () => <Image src="Skills/Tools/Git.svg" alt="Git" width={28} height={28} />, level: 95 },
+    { title: "GitHub", icon: () => <Image src="Skills/Tools/Github.svg" alt="GitHub" width={28} height={28} />, level: 95 },
+    { title: "Vercel", icon: () => <Image src="Skills/Tools/Vercel.svg" alt="Vercel" width={28} height={28} />, level: 95 },
     { title: "Linux", icon: () => <Image src="Skills/Tools/Linux.svg" alt="Linux" width={28} height={28} />, level: 95 },
-    { title: "Figma", icon: () => <Image src="/Figma.svg" alt="Figma" width={28} height={28} />, level: 85 },
-    { title: "Android Studio", icon: () => <Image src="/Android.svg" alt="Android Studio" width={28} height={28} />, level: 78 } ,
-    { title: "Firebase", icon: () => <Image src="/Firebase.svg" alt="Firebase" width={28} height={28} />, level: 80 } ,
-    { title: "Socket.io", icon: () => <Image src="/Socket.svg" alt="Socket" width={28} height={28} />, level: 85 }
+    { title: "Figma", icon: () => <Image src="Skills/Tools/Figma.svg" alt="Figma" width={28} height={28} />, level: 85 },
+    { title: "Android Studio", icon: () => <Image src="Skills/Tools/Android.svg" alt="Android Studio" width={28} height={28} />, level: 78 } ,
+    { title: "Firebase", icon: () => <Image src="Skills/Tools/Firebase.svg" alt="Firebase" width={28} height={28} />, level: 80 } ,
+    { title: "Socket.io", icon: () => <Image src="Skills/Tools/Socket.svg" alt="Socket" width={28} height={28} />, level: 85 }
   ]
 
   const additionalSkills: SkillItem[] = [
@@ -57,15 +57,15 @@ export default function SkillsSection() {
     // { name: "Responsive Design", icon: Smartphone, color: "from-green-400 to-blue-500" },
     { 
       name: "LeetCode", 
-      icon: () => <Image src="/leetcode.svg" alt="LeetCode" width={32} height={32} />, 
+      icon: () => <Image src="/CP-DSA/leetcode.svg" alt="LeetCode" width={32} height={32} />, 
       color: "from-orange-400 to-orange-600",
-      link: "https://leetcode.com/your-username"
+      link: "https://leetcode.com/u/leet--code/"
     },
     { 
       name: "Codeforces", 
-      icon: () => <Image src="/codeforces-icon-filled-256.png" alt="Codeforces" width={32} height={32} />, 
+      icon: () => <Image src="/CP-DSA/Cf.png" alt="Codeforces" width={32} height={32} />, 
       color: "from-red-400 to-red-600",
-      link: "https://codeforces.com/profile/your-username"
+      link: "https://codeforces.com/profile/Chad._.saagar"
     },
   ]
 

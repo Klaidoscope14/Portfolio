@@ -3,7 +3,7 @@ import { useRef } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
 import { Sphere, MeshDistortMaterial, Float, OrbitControls, Environment } from "@react-three/drei"
 import { motion } from "framer-motion"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 import * as THREE from "three"
 import GlowingButton from "./aceternity/GlowingButton"
 
@@ -143,7 +143,7 @@ export default function HeroSection() {
             {[
               { icon: Github, href: "https://github.com/Klaidoscope14", label: "GitHub" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/chaitanya-saagar-476b562a2/", label: "LinkedIn" },
-              { icon: Mail, href: "#", label: "Email" },
+              { icon: Mail, href:"mailto:saagarchaitanya80@gmail.com" , label: "Email" },
             ].map((social, index) => (
               <motion.a
                 key={social.label}
@@ -160,14 +160,6 @@ export default function HeroSection() {
             ))}
           </motion.div>
         </motion.div>
-
-        {/* <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-        >
-          <ArrowDown className="w-6 h-6 text-gray-400" />
-        </motion.div> */}
       </div>
     </section>
   )
