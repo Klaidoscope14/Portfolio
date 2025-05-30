@@ -26,6 +26,7 @@ export default function SkillsSection() {
     { title: "HTML", icon: () => <Image src="/HTML.svg" alt="HTML" width={28} height={28} />, level: 98 },
     { title: "CSS", icon: () => <Image src="/CSS.svg" alt="CSS" width={28} height={28} />, level: 95 },
     { title: "Sass", icon: () => <Image src="/Sass.svg" alt="Sass" width={28} height={28} />, level: 88 },
+    { title: "Material UI", icon: () => <Image src="Skills/Frontend/MaterialUI.svg" alt="MUI" width={28} height={28} />, level: 90 },
     { title: "Tailwind", icon: () => <Image src="/TailwindCSS.svg" alt="Tailwind" width={28} height={28} />, level: 92 },
     { title: "Three.js", icon: () => <Image src="/threejs.svg" alt="Three.js" width={28} height={28} />, level: 85 },
     { title: "React", icon: () => <Image src="/React.svg" alt="React" width={28} height={28} />, level: 95 },
@@ -37,12 +38,14 @@ export default function SkillsSection() {
     { title: "Express.js", icon: () => <Image src="/Express.svg" alt="Express.js" width={28} height={28} />, level: 90 },
     { title: "PostgreSQL", icon: () => <Image src="/PostGressSQL.svg" alt="PostgreSQL" width={28} height={28} />, level: 82 },
     { title: "MongoDB", icon: () => <Image src="/MongoDB.svg" alt="MongoDB" width={28} height={28} />, level: 80 },
+    { title: "MySQL", icon: () => <Image src="Skills/Backend/MySQL.svg" alt="MySQL" width={28} height={28} />, level: 75 },
   ]
 
   const toolsSkills = [
     { title: "Git", icon: () => <Image src="/Git.svg" alt="Git" width={28} height={28} />, level: 95 },
     { title: "GitHub", icon: () => <Image src="/Github.svg" alt="GitHub" width={28} height={28} />, level: 95 },
     { title: "Vercel", icon: () => <Image src="/Vercel.svg" alt="Vercel" width={28} height={28} />, level: 95 },
+    { title: "Linux", icon: () => <Image src="Skills/Tools/Linux.svg" alt="Linux" width={28} height={28} />, level: 95 },
     { title: "Figma", icon: () => <Image src="/Figma.svg" alt="Figma" width={28} height={28} />, level: 85 },
     { title: "Android Studio", icon: () => <Image src="/Android.svg" alt="Android Studio" width={28} height={28} />, level: 78 } ,
     { title: "Firebase", icon: () => <Image src="/Firebase.svg" alt="Firebase" width={28} height={28} />, level: 80 } ,

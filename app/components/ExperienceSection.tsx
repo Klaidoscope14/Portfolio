@@ -76,14 +76,11 @@ export default function ExperienceSection() {
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 className={`relative flex items-center ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
               >
-                {/* Timeline dot */}
                 <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full border-4 border-black z-10" />
 
-                {/* Content */}
                 <div className={`w-full md:w-1/2 ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"} ml-12 md:ml-0`}>
                   <FloatingCard delay={index * 0.1}>
                     <div className="space-y-4">
-                      {/* Header */}
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                         <div>
                           <h3 className="text-xl font-bold text-white">{experience.title}</h3>
@@ -104,10 +101,8 @@ export default function ExperienceSection() {
                         </div>
                       </div>
 
-                      {/* Description */}
                       <p className="text-gray-300 leading-relaxed">{experience.description}</p>
 
-                      {/* Achievements */}
                       <div>
                         <h4 className="font-semibold text-white mb-2">Key Achievements:</h4>
                         <ul className="space-y-1">
@@ -120,7 +115,6 @@ export default function ExperienceSection() {
                         </ul>
                       </div>
 
-                      {/* Technologies */}
                       <div>
                         <h4 className="font-semibold text-white mb-2">Technologies:</h4>
                         <div className="flex flex-wrap gap-2">
@@ -142,7 +136,6 @@ export default function ExperienceSection() {
           </div>
         </div>
 
-        {/* Call to action */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -151,7 +144,7 @@ export default function ExperienceSection() {
         >
           <p className="text-gray-300 mb-6">Want to know more about my professional journey?</p>
           <motion.a
-            href="#"
+            href="https://drive.google.com/drive/folders/1dp2fC4dKi6a1XiPHAx9VKNROvpDjeEm2?usp=sharing"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-lg hover:from-cyan-600 hover:to-purple-600 transition-all duration-300"

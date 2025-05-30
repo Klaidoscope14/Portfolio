@@ -35,7 +35,6 @@ function SparkleField() {
 export default function LampSection() {
   return (
     <section className="relative py-20 px-6 overflow-hidden">
-      {/* 3D Sparkles Background */}
       <div className="absolute inset-0 z-0">
         <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
           <ambientLight intensity={0.3} />
@@ -50,9 +49,7 @@ export default function LampSection() {
           transition={{ duration: 1 }}
           className="text-center"
         >
-          {/* Lamp Effect */}
           <div className="relative">
-            {/* Lamp beam */}
             <motion.div
               initial={{ height: 0, opacity: 0 }}
               whileInView={{ height: "400px", opacity: 1 }}
@@ -60,7 +57,6 @@ export default function LampSection() {
               className="absolute left-1/2 transform -translate-x-1/2 -top-20 w-px bg-gradient-to-b from-transparent via-purple-500 to-transparent"
             />
 
-            {/* Lamp glow */}
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 0.3 }}
@@ -68,7 +64,6 @@ export default function LampSection() {
               className="absolute left-1/2 transform -translate-x-1/2 -top-20 w-96 h-96 bg-gradient-radial from-purple-500/30 to-transparent rounded-full blur-3xl"
             />
 
-            {/* Content illuminated by lamp */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
