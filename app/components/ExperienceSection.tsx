@@ -12,20 +12,19 @@ export default function ExperienceSection() {
 
   const experiences = [
     {
-      title: "Senior Full-Stack Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
+      title: "Web Developmnet Head",
+      company: "Entrepreneurship Cell , IIT Patna",
+      location: "IIT Patna",
+      period: "May 2025",
       description:
-        "Leading development of scalable web applications using React, Node.js, and cloud technologies. Mentoring junior developers and architecting microservices solutions.",
+        "Leading development of a scalable E-Cell site using React , Next.js , Node.js , Express.js. Cooridnating junior developers and architecting scalable and responsive solutions.",
       achievements: [
-        "Increased application performance by 40% through optimization",
-        "Led a team of 5 developers on multiple high-impact projects",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-        "Architected and deployed microservices handling 1M+ requests daily",
+        "Creted an E-Cell Alumni Portal using Three.js , React , Next.js.",
+        "Leading a team of 4 developers on multiple projects imapctin growth and outreach of E-Cell.",
+        "Conducted Debugging Operations on frontend of different websites of E-Cell."
       ],
-      technologies: ["React", "Node.js", "TypeScript", "AWS", "Docker", "PostgreSQL"],
-      link: "https://anweshaaa.vercel.app/",
+      technologies: ["Tailwind CSS" , "JavaScript" , "Three.js" ,"TypeScript" , "React", "Node.js" , "Express.js" , "Airtable"],
+      link: "https://ecell.iitp.ac.in/",
     } ,
     {
       title: "Full-Stack Developer",

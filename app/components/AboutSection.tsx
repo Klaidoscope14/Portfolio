@@ -74,7 +74,7 @@ export default function AboutSection() {
               delving into CS Core (Networking Systems , Operating Systems and sometimes financial algorithms) , exploring new frameworks, contributing to open source, or experimenting with 3D graphics and animations. Hobbies include routine powerlifting.
             </p>
             <div className="flex flex-wrap gap-2">
-              {["Front-end Development", "Back-end Development", "Competitive Programming", "Ml Enthusiast"].map((tech) => (
+              {["Front-end Development", "Back-end Development", "Competitive Programmer", "Leetcoder" ,"ML Enthusiast"].map((tech) => (
                 <Badge key={tech} variant="secondary" className="bg-purple-500/20 text-purple-300 border-purple-500/30">
                   {tech}
                 </Badge>
