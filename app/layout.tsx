@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   keywords: "full-stack developer, react developer, three.js, typescript, web development, portfolio",
   authors: [{ name: "Chaitanya Saagar" }],
   openGraph: {
-    title: "Chaitanya Saagar - Full-Stack Developer Portfolio",
-    description: "Crafting immersive digital experiences with cutting-edge technologies",
+    title: "Chaitanya Saagar",
+    description: "Check out this Website!",
     type: "website",
   },
 }
