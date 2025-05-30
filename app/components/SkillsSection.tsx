@@ -44,7 +44,7 @@ export default function SkillsSection() {
   const toolsSkills = [
     { title: "Git", icon: () => <Image src="Skills/Tools/Git.svg" alt="Git" width={28} height={28} />, level: 95 },
     { title: "GitHub", icon: () => <Image src="Skills/Tools/Github.svg" alt="GitHub" width={28} height={28} />, level: 95 },
-    { title: "Vercel", icon: () => <Image src="Skills/Tools/Vercel.svg" alt="Vercel" width={28} height={28} />, level: 95 },
+    { title: "Vercel", icon: () => <Image src="Skills/Tools/vercel.svg" alt="Vercel" width={28} height={28} />, level: 95 },
     { title: "Linux", icon: () => <Image src="Skills/Tools/Linux.svg" alt="Linux" width={28} height={28} />, level: 95 },
     { title: "Figma", icon: () => <Image src="Skills/Tools/Figma.svg" alt="Figma" width={28} height={28} />, level: 85 },
     { title: "Android Studio", icon: () => <Image src="Skills/Tools/Android.svg" alt="Android Studio" width={28} height={28} />, level: 78 } ,
