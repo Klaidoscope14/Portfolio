@@ -93,8 +93,8 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-center md:text-left"
           >
-            <h1 className="text-4xl md:text-7xl font-bold flex justify-center align-middle mb-9 bg-gradient-to-r from-violet-900 to-teal-600 bg-clip-text text-transparent font-[cursive]">
-              Hi, I'm Chaitanya
+            <h1 className="text-4xl md:text-7xl font-bold flex justify-center align-middle mb-9 bg-gradient-to-r from-violet-900 to-teal-600 bg-clip-text text-transparent">
+              Hi, I&apos;m Chaitanya
               <span className="relative inline-block group">
                 <motion.span
                   className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-gray-900 to-gray-700"
@@ -104,10 +104,10 @@ export default function HeroSection() {
                 />
               </span>
             </h1>
-            <p className="text-2xl bg-gradient-to-r from-teal-600 to-violet-900 bg-clip-text text-transparent font-semibold font-[cursive]">
+            <p className="text-2xl bg-gradient-to-r from-teal-600 to-violet-900 bg-clip-text text-transparent font-semibold">
               Architecting seamless digital experiences, one optimized algorithm at a
             </p>
-            <p className="text-2xl flex justify-center align-middle mb-8 bg-gradient-to-r from-teal-600 to-violet-900 bg-clip-text text-transparent font-semibold font-[cursive]">
+            <p className="text-2xl flex justify-center align-middle mb-8 bg-gradient-to-r from-teal-600 to-violet-900 bg-clip-text text-transparent font-semibold">
               time
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
@@ -144,7 +144,7 @@ export default function HeroSection() {
               { icon: Github, href: "https://github.com/Klaidoscope14", label: "GitHub" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/chaitanya-saagar-476b562a2/", label: "LinkedIn" },
               { icon: Mail, href:"mailto:saagarchaitanya80@gmail.com" , label: "Email" },
-            ].map((social, index) => (
+            ].map((social) => (
               <motion.a
                 key={social.label}
                 href={social.href}

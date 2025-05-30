@@ -79,9 +79,9 @@ export default function ContactSection() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold mb-8 text-cyan-400">Let's Connect and Innovate</h3>
+            <h3 className="text-2xl font-bold mb-8 text-cyan-400">Let&apos;s Connect and Innovate</h3>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              I'm always excited to work on new projects and collaborate with creative minds. Whether you have a
+              I&apos;m always excited to work on new projects and collaborate with creative minds. Whether you have a
               specific project in mind or are impressed by my work and want to collaborate, feel free to reach out!
             </p>
 

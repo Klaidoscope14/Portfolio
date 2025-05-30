@@ -1,5 +1,4 @@
 "use client"
-
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import { Badge } from "@/components/ui/badge"
@@ -71,7 +70,7 @@ export default function AboutSection() {
               Apart from Web development , I also practice competetive programming and Data Structures and Algorithm concepts. My current rating in Codeforces is 1416 , and i regularly like giving contests on LeetCode.
             </p>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              I believe in continuous learning and staying ahead of the curve. When I'm not coding, you'll find me
+              I believe in continuous learning and staying ahead of the curve. When I&apos;m not coding, you&apos;ll find me
               delving into CS Core (Networking Systems , Operating Systems and sometimes financial algorithms) , exploring new frameworks, contributing to open source, or experimenting with 3D graphics and animations. Hobbies include routine powerlifting.
             </p>
             <div className="flex flex-wrap gap-2">
@@ -88,7 +87,6 @@ export default function AboutSection() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            {/* Photo Card */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -99,16 +97,15 @@ export default function AboutSection() {
               <div className="relative bg-black/50 backdrop-blur-sm border border-white/10 rounded-lg overflow-hidden group-hover:border-white/30 transition-all duration-300">
                 <div className="relative aspect-square">
                   <Image
-                    src="/Chaitanya.jpg"
+                    src="/About/Chaitanya.jpg"
                     alt="Chaitanya"
                     fill
                     className="object-cover"
                   />
                 </div>
-                {/* Social Media Icons */}
                 <div className="absolute bottom-4 left-4 flex gap-3">
                   <motion.a
-                    href="#"
+                    href="https://www.linkedin.com/in/chaitanya-saagar-476b562a2/"
                     whileHover={{ scale: 1.2, rotate: 5 }}
                     whileTap={{ scale: 0.9 }}
                     className="relative group/social p-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:border-purple-400 transition-all duration-300"
@@ -119,7 +116,7 @@ export default function AboutSection() {
                     </div>
                   </motion.a>
                   <motion.a
-                    href="#"
+                    href="https://www.instagram.com/chad._.saagar"
                     whileHover={{ scale: 1.2, rotate: 5 }}
                     whileTap={{ scale: 0.9 }}
                     className="relative group/social p-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:border-purple-400 transition-all duration-300"

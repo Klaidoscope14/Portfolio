@@ -17,7 +17,7 @@ interface FloatingDockProps {
   items: DockItem[]
 }
 
-function DockIcon({ item, mouseX }: { item: DockItem; mouseX: any }) {
+function DockIcon({ item, mouseX }: { item: DockItem; mouseX: ReturnType<typeof useMotionValue<number>> }) {
   const ref = useRef<HTMLDivElement>(null)
 
   const distance = useTransform(mouseX, (val: number) => {

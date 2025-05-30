@@ -71,10 +71,10 @@ export default function SkillsSection() {
 
   const IconWrapper = ({ icon }: { icon: IconType }) => {
     if (typeof icon === 'function') {
-      return icon()
+      const IconComponent = icon
+      return <IconComponent />
     }
-    const Icon = icon
-    return <Icon className="w-full h-full" />
+    return <div className="w-full h-full">{icon}</div>
   }
 
   return (
@@ -153,7 +153,7 @@ export default function SkillsSection() {
 
         {/* Additional Skills */}
         <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,2fr))] gap-4 mt-8 justify-center">
-          {additionalSkills.map((skill, index) => (
+          {additionalSkills.map((skill) => (
             <PinContainer key={skill.name} title={skill.name} href={skill.link}>
               <FloatingCard>
                 <div className="text-center">
@@ -173,14 +173,12 @@ export default function SkillsSection() {
                   )}
                   <h4 className="font-semibold mb-2 text-white">{skill.name}</h4>
                   {skill.link && (
-                    <a
-                      href={skill.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <button
+                      onClick={() => window.open(skill.link, '_blank')}
                       className="text-sm text-cyan-400 hover:text-cyan-300 transition-colors"
                     >
                       View Profile
-                    </a>
+                    </button>
                   )}
                 </div>
               </FloatingCard>
