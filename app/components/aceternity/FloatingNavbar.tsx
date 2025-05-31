@@ -1,5 +1,4 @@
 "use client"
-
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Home, User, Briefcase, Code, FolderOpen, Mail } from "lucide-react"
@@ -12,7 +11,6 @@ export default function FloatingNavbar() {
     const handleScroll = () => {
       setIsVisible(window.scrollY > 100)
 
-      // Update active section based on scroll position
       const sections = ["home", "about", "experience", "skills", "projects", "contact"]
       const scrollPosition = window.scrollY + 200
 
@@ -49,28 +47,26 @@ export default function FloatingNavbar() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -100, opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50"
+          className="fixed top-4 transform -translate-x-1/2 z-50 w-full max-w-fit px-4"
         >
-          <div className="relative">
-            {/* Glow effect */}
+          <div className="relative mx-auto">
             <div className="absolute -inset-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-full blur-xl" />
 
-            {/* Navigation container */}
-            <div className="relative bg-black/80 backdrop-blur-md border border-white/10 rounded-full px-6 py-3">
-              <div className="flex items-center space-x-2">
+            <div className="relative bg-black/80 backdrop-blur-md border border-white/10 rounded-full px-3 sm:px-6 py-2 sm:py-3">
+              <div className="flex items-center justify-center space-x-1 sm:space-x-2">
                 {navItems.map((item) => (
                   <motion.a
                     key={item.id}
                     href={item.href}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`relative p-3 rounded-full transition-all duration-300 group ${
+                    className={`relative p-2 sm:p-3 rounded-full transition-all duration-300 group ${
                       activeSection === item.id
                         ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white"
                         : "text-gray-400 hover:text-white"
                     }`}
                   >
-                    {/* Active indicator glow */}
+
                     {activeSection === item.id && (
                       <motion.div
                         layoutId="activeIndicator"
@@ -79,10 +75,9 @@ export default function FloatingNavbar() {
                       />
                     )}
 
-                    <item.icon className="w-5 h-5 relative z-10" />
+                    <item.icon className="w-4 h-4 sm:w-5 sm:h-5 relative z-10" />
 
-                    {/* Tooltip */}
-                    <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                    <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden sm:block">
                       <div className="bg-black/90 text-white text-xs px-2 py-1 rounded whitespace-nowrap">
                         {item.name}
                       </div>

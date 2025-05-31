@@ -36,7 +36,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="py-20 px-6 relative">
-      <div className="container mx-auto max-w-6xl" ref={ref}>
+      <div className="container mx-auto max-w-7xl" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -133,13 +133,13 @@ export default function AboutSection() {
         </div>
 
         {/* Feature Cards in a single line */}
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map((feature, index) => (
             <FloatingCard key={feature.title} delay={0.6 + index * 0.1}>
-              <div className="text-center">
+              <div className="text-center p-4">
                 <feature.icon className="w-8 h-8 mx-auto mb-4 text-cyan-400" />
-                <h4 className="font-semibold mb-2 text-white">{feature.title}</h4>
-                <p className="text-sm text-gray-400">{feature.description}</p>
+                <h4 className="font-semibold mb-2 text-white text-lg">{feature.title}</h4>
+                <p className="text-sm text-gray-400 break-words whitespace-normal">{feature.description}</p>
               </div>
             </FloatingCard>
           ))}

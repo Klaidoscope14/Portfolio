@@ -28,19 +28,17 @@ export default function Portfolio() {
 
       <FloatingNavbar />
 
-      <TracingBeam>
         <HeroSection />
-
+        <TracingBeam>
         <AboutSection />
 
         <ExperienceSection />
 
         <SkillsSection />
-
         <ProjectsSection />
+      </TracingBeam>
 
         <ContactSection />
-      </TracingBeam>
     </div>
   )
 }

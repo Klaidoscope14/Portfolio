@@ -19,7 +19,7 @@ function AnimatedSphere() {
 
   return (
     <Float speed={1.5} rotationIntensity={1} floatIntensity={2}>
-      <Sphere ref={meshRef} args={[1, 100, 200]} scale={2.5}>
+      <Sphere ref={meshRef} args={[1, 100, 200]} scale={[2, 2, 2]}>
         <MeshDistortMaterial
           color="#FFFFFF"
           attach="material"
@@ -74,20 +74,27 @@ function ParticleField() {
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-visible">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
+        <Canvas camera={{ position: [0, 0, 6], fov: 60 }}>
           <ambientLight intensity={0.8} />
           <pointLight position={[10, 10, 10]} intensity={1.5} color="#ffffff" />
           <pointLight position={[-10, -10, -10]} intensity={0.8} color="#F9A602" />
           <Environment preset="sunset" />
           <AnimatedSphere />
           <ParticleField />
-          <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.5} />
+          <OrbitControls 
+            enableZoom={false} 
+            enablePan={false} 
+            autoRotate 
+            autoRotateSpeed={0.5}
+            minPolarAngle={Math.PI / 3}
+            maxPolarAngle={Math.PI * 2/3}
+          />
         </Canvas>
       </div>
 
-      <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -111,7 +118,7 @@ export default function HeroSection() {
               </span>
             </h1>
             <p className="text-2xl bg-gradient-to-r from-teal-600 to-violet-900 bg-clip-text text-transparent font-semibold">
-              Architecting seamless digital experiences, one optimized algorithm at a
+              Architecting seamless Systems, one optimized algorithm at a
             </p>
             <p className="text-2xl flex justify-center align-middle mb-8 bg-gradient-to-r from-teal-600 to-violet-900 bg-clip-text text-transparent font-semibold">
               time

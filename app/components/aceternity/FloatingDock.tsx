@@ -74,7 +74,16 @@ export default function FloatingDock({ items }: FloatingDockProps) {
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Number.POSITIVE_INFINITY)}
-      className="mx-auto flex h-24 items-end gap-4 md:gap-6 rounded-3xl bg-black/40 backdrop-blur-md border border-white/10 px-6 md:px-8 pb-4 max-w-fit overflow-visible shadow-2xl"
+      onTouchStart={(e) => {
+        const touch = e.touches[0]
+        mouseX.set(touch.pageX)
+      }}
+      onTouchMove={(e) => {
+        const touch = e.touches[0]
+        mouseX.set(touch.pageX)
+      }}
+      onTouchEnd={() => mouseX.set(Number.POSITIVE_INFINITY)}
+      className="mx-auto flex flex-wrap justify-center items-end gap-4 md:gap-6 rounded-3xl bg-black/40 backdrop-blur-md border border-white/10 px-6 md:px-8 pt-4 pb-4 max-w-fit overflow-visible shadow-2xl"
     >
       {items.map((item, i) => (
         <DockIcon mouseX={mouseX} key={i} item={item} />

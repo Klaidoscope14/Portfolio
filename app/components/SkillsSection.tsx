@@ -49,6 +49,9 @@ export default function SkillsSection() {
     { title: "Figma", icon: () => <Image src="Skills/Tools/Figma.svg" alt="Figma" width={28} height={28} />, level: 85 },
     { title: "Android Studio", icon: () => <Image src="Skills/Tools/Android.svg" alt="Android Studio" width={28} height={28} />, level: 78 } ,
     { title: "Firebase", icon: () => <Image src="Skills/Tools/Firebase.svg" alt="Firebase" width={28} height={28} />, level: 80 } ,
+    { title: "AWS", icon: () => <Image src="Skills/Tools/AWS.svg" alt="AWS" width={28} height={28} />, level: 80 } ,
+    { title: "Postman", icon: () => <Image src="Skills/Tools/Postman.svg" alt="Postman" width={28} height={28} />, level: 85 } ,
+    { title: "Google Cloud", icon: () => <Image src="Skills/Tools/GoogleCloud.svg" alt="Google Cloud" width={28} height={28} />, level: 80 } ,
     { title: "Socket.io", icon: () => <Image src="Skills/Tools/Socket.svg" alt="Socket" width={28} height={28} />, level: 85 }
   ]
 
@@ -57,13 +60,21 @@ export default function SkillsSection() {
     // { name: "Responsive Design", icon: Smartphone, color: "from-green-400 to-blue-500" },
     { 
       name: "LeetCode", 
-      icon: () => <Image src="/CP-DSA/leetcode.svg" alt="LeetCode" width={32} height={32} />, 
+      icon: () => (
+        <div className="flex items-center gap-2 mt-10">
+          <Image src="/CP-DSA/leetcode.svg" alt="LeetCode" width={32} height={32} />
+        </div>
+      ), 
       color: "from-orange-400 to-orange-600",
       link: "https://leetcode.com/u/leet--code/"
     },
     { 
       name: "Codeforces", 
-      icon: () => <Image src="/CP-DSA/Cf.png" alt="Codeforces" width={32} height={32} />, 
+      icon: () => (
+        <div className="flex items-center gap-2 mt-10">
+          <Image src="/CP-DSA/Cf.png" alt="Codeforces" width={32} height={32} />
+        </div>
+      ), 
       color: "from-red-400 to-red-600",
       link: "https://codeforces.com/profile/Chad._.saagar"
     },
@@ -79,7 +90,7 @@ export default function SkillsSection() {
 
   return (
     <section id="skills" className="py-20 px-6 relative">
-      <div className="container mx-auto max-w-6xl" ref={ref}>
+      <div className="container mx-auto max-w-7xl" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -154,7 +165,7 @@ export default function SkillsSection() {
         {/* Additional Skills */}
         <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,2fr))] gap-4 mt-8 justify-center">
           {additionalSkills.map((skill) => (
-            <PinContainer key={skill.name} title={skill.name} href={skill.link}>
+            <div key={skill.name} className="relative">
               <FloatingCard>
                 <div className="text-center">
                   {typeof skill.icon === "string" ? (
@@ -173,16 +184,18 @@ export default function SkillsSection() {
                   )}
                   <h4 className="font-semibold mb-2 text-white">{skill.name}</h4>
                   {skill.link && (
-                    <button
-                      onClick={() => window.open(skill.link, '_blank')}
+                    <a
+                      href={skill.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-sm text-cyan-400 hover:text-cyan-300 transition-colors"
                     >
                       View Profile
-                    </button>
+                    </a>
                   )}
                 </div>
               </FloatingCard>
-            </PinContainer>
+            </div>
           ))}
         </div>
       </div>

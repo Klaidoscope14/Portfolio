@@ -210,36 +210,40 @@ export default function ThreeDCard({
           </CardItem>
         )}
         <div className="flex justify-between items-center mt-6">
-          <CardItem
-            translateZ={20}
-            translateX={-40}
-            className="px-4 py-2 rounded-xl text-xs font-normal"
-          >
-            <a
-              href={githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-800 hover:bg-gray-700 text-white transition-colors"
+          {githubLink && (
+            <CardItem
+              translateZ={20}
+              translateX={-40}
+              className="px-4 py-2 rounded-xl text-xs font-normal"
             >
-              <Github className="w-4 h-4" />
-              GitHub
-            </a>
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            translateX={40}
-            className="px-4 py-2 rounded-xl text-xs font-bold"
-          >
-            <a
-              href={demoLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white hover:bg-gray-900 dark:hover:bg-gray-100 transition-colors"
+              <a
+                href={githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-800 hover:bg-gray-700 text-white transition-colors"
+              >
+                <Github className="w-4 h-4" />
+                GitHub
+              </a>
+            </CardItem>
+          )}
+          {demoLink && (
+            <CardItem
+              translateZ={20}
+              translateX={40}
+              className="px-4 py-2 rounded-xl text-xs font-bold"
             >
-              <ExternalLink className="w-4 h-4" />
-              Live Demo
-            </a>
-          </CardItem>
+              <a
+                href={demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white hover:bg-gray-900 dark:hover:bg-gray-100 transition-colors"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Live Demo
+              </a>
+            </CardItem>
+          )}
         </div>
       </CardBody>
     </CardContainer>
