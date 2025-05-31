@@ -70,7 +70,7 @@ export default function AboutSection() {
               Apart from Web development , I also practice competetive programming and Data Structures and Algorithm concepts. My current rating in Codeforces is 1416 , and i regularly like giving contests on LeetCode.
             </p>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              I believe in continuous learning and staying ahead of the curve. When I'm not coding, you'll find me
+              I believe in continuous learning and staying ahead of the curve. When I&apos;m not coding, you&apos;ll find me
               delving into CS Core (Networking Systems , Operating Systems and sometimes financial algorithms) , exploring new frameworks, contributing to open source, or experimenting with 3D graphics and animations. Hobbies include routine powerlifting.
             </p>
             <div className="flex flex-wrap gap-2">

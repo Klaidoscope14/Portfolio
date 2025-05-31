@@ -109,7 +109,7 @@ export default function ContactSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex flex-col"
           >
-            <h3 className="text-2xl font-bold mb-6 md:mb-8 text-cyan-400">Let's Connect and Innovate</h3>
+            <h3 className="text-2xl font-bold mb-6 md:mb-8 text-cyan-400">Let&apos;s Connect and Innovate</h3>
             <p className="text-gray-300 mb-6 md:mb-8 leading-relaxed">
               Want to beat and get ahead of the competition? Want to complete your project in record time and within budget? Have an interesting project idea? Let&apos;s talk about how I can help you achieve your goals.
             </p>
