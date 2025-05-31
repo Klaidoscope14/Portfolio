@@ -111,7 +111,7 @@ export default function ContactSection() {
           >
             <h3 className="text-2xl font-bold mb-6 md:mb-8 text-cyan-400">Let's Connect and Innovate</h3>
             <p className="text-gray-300 mb-6 md:mb-8 leading-relaxed">
-              Want to beat and get ahead of the competition? Want to complete your project in record time and within budget? Have an interesting project idea? Let's talk about how I can help you achieve your goals.
+              Want to beat and get ahead of the competition? Want to complete your project in record time and within budget? Have an interesting project idea? Let&apos;s talk about how I can help you achieve your goals.
             </p>
 
             <div className="space-y-4 md:space-y-6">
