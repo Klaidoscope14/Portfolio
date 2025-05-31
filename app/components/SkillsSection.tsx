@@ -7,7 +7,6 @@ import Image from "next/image"
 import { LucideIcon } from "lucide-react"
 import type { ReactElement } from "react"
 import FloatingCard from "./aceternity/FloatingCard"
-import { PinContainer } from "./aceternity/AnimatedPin"
 
 type IconType = LucideIcon | (() => ReactElement)
 

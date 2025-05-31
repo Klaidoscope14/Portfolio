@@ -107,7 +107,7 @@ export default function HeroSection() {
             className="text-center md:text-left"
           >
             <h1 className="text-4xl md:text-7xl font-bold flex justify-center align-middle mb-9 bg-gradient-to-r from-violet-900 to-teal-600 bg-clip-text text-transparent">
-              Hi, I&apos;m Chaitanya
+              Hi, I'm Chaitanya
               <span className="relative inline-block group">
                 <motion.span
                   className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-gray-900 to-gray-700"
