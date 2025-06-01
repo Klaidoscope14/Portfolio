@@ -23,31 +23,32 @@ export default function ContactSection() {
   })
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsLoading(true)
-
+    e.preventDefault();
+    setIsLoading(true);
+  
     try {
       await emailjs.send(
-        'service_708hb9r',  // Emailjs Service ID
-        'template_wc4cq6q', //  EmailJS template ID
+        process.env.EMAILJS_SERVICE_ID!,
+        process.env.EMAILJS_TEMPLATE_ID!,
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
           to_name: 'Chaitanya',
         },
-        'gibU6br6g-sEfNQ34' // EmailJS public key
-      )
-
-      toast.success('Message sent successfully!')
-      setFormData({ name: "", email: "", message: "" })
+        process.env.EMAILJS_PUBLIC_KEY!
+      );
+  
+      toast.success('Message sent successfully!');
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      toast.error('Failed to send message. Please try again.')
-      console.error('Error sending email:', error)
+      toast.error('Failed to send message. Please try again.');
+      console.error('Error sending email:', error);
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
-  }
+  };
+  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
