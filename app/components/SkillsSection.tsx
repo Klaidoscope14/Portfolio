@@ -107,7 +107,6 @@ export default function SkillsSection() {
           />
         </motion.div>
 
-        {/* Programming Languages */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -121,7 +120,6 @@ export default function SkillsSection() {
         </motion.div>
 
         <div className="space-y-16">
-          {/* Frontend Skills */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -134,7 +132,6 @@ export default function SkillsSection() {
             </div>
           </motion.div>
 
-          {/* Backend Skills */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -147,7 +144,6 @@ export default function SkillsSection() {
             </div>
           </motion.div>
 
-          {/* Tools & Others */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -161,7 +157,6 @@ export default function SkillsSection() {
           </motion.div>
         </div>
 
-        {/* Additional Skills */}
         <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,2fr))] gap-4 mt-8 justify-center">
           {additionalSkills.map((skill) => (
             <div key={skill.name} className="relative">

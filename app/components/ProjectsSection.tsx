@@ -93,7 +93,7 @@ export default function ProjectsSection() {
             className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent"
           />
           <AnimatedText
-            text="Interactive 3D project showcase with immersive card experiences"
+            text="This is the Projects Section!"
             className="text-xl text-gray-300 max-w-3xl mx-auto"
             delay={0.3}
           />
@@ -104,7 +104,6 @@ export default function ProjectsSection() {
             <div></div>
           </TracingBeam>
           
-          {/* Project Carousel */}
           <div 
             className="relative overflow-visible py-8"
             onTouchStart={handleTouchStart}
@@ -139,7 +138,6 @@ export default function ProjectsSection() {
             </motion.div>
           </div>
 
-          {/* Glowing Dots Navigation */}
           <div className="flex justify-center items-center gap-4 mt-8">
             {projects.map((_, index) => (
               <motion.button

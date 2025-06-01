@@ -1,5 +1,4 @@
 "use client"
-
 import { motion } from "framer-motion"
 import { useRef } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
