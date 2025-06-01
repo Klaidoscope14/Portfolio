@@ -131,8 +131,7 @@ export default function AboutSection() {
             </motion.div>
           </motion.div>
         </div>
-
-        {/* Feature Cards in a single line */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map((feature, index) => (
             <FloatingCard key={feature.title} delay={0.6 + index * 0.1}>
