@@ -142,7 +142,7 @@ export default function ExperienceSection() {
         >
           <p className="text-gray-300 mb-6">Want to know more about my professional journey?</p>
           <motion.a
-            href="https://drive.google.com/drive/folders/1dp2fC4dKi6a1XiPHAx9VKNROvpDjeEm2?usp=sharing"
+            href="https://drive.google.com/drive/folders/1dp2fC4dKi6a1XiPHAx9VKNROvpDjeEm2"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-lg hover:from-cyan-600 hover:to-purple-600 transition-all duration-300"
