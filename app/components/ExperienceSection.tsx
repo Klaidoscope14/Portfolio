@@ -83,7 +83,7 @@ export default function ExperienceSection() {
                         <div>
                           <h3 className="text-xl font-bold text-white">{experience.title}</h3>
                           <div className="flex items-center gap-2 text-cyan-400">
-                            <span className="font-semibold">{experience.company}</span>
+                            <span className="font-semibold"><a href = {experience.link}>{experience.company}</a></span>
                             <ExternalLink className="w-4 h-4" />
                           </div>
                         </div>

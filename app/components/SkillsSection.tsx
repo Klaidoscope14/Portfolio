@@ -101,7 +101,7 @@ export default function SkillsSection() {
             className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent"
           />
           <AnimatedText
-            text="Interactive skill showcase with floating dock interface"
+            text="Dynamic. Digital. Distinct."
             className="text-xl text-gray-300 max-w-3xl mx-auto"
             delay={0.3}
           />
