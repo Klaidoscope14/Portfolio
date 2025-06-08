@@ -38,16 +38,7 @@ export default function ProjectsSection() {
       technologies: ["Tailwind CSS" , "Three.js" , "JavaScript", "React", "Airtable" , "Vercel"],
       liveUrl: "https://e-cell-alumni-connect.vercel.app/",
       githubUrl: "https://github.com/Klaidoscope14/E-Cell-Alumni-Connect",
-    },
-    // {
-    //   title: "More Coming Soon! ✌🏼",
-    //   description:
-    //     "Upcoming projects will be added here soon!",
-    //   image: "/Plus.svg",
-    //   // liveUrl: "#",
-    //   // githubUrl: "#",
-    //   featured: false,
-    // },
+    }
   ]
 
   const handleDotClick = (index: number) => {

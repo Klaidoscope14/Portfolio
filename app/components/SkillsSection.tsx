@@ -55,8 +55,6 @@ export default function SkillsSection() {
   ]
 
   const additionalSkills: SkillItem[] = [
-    // { name: "Performance Optimization", icon: Zap, color: "from-yellow-400 to-orange-500" },
-    // { name: "Responsive Design", icon: Smartphone, color: "from-green-400 to-blue-500" },
     { 
       name: "LeetCode", 
       icon: () => (
