@@ -104,9 +104,7 @@ export function LanguageDock({ className }: LanguageDockProps) {
     { title: 'JavaScript', icon: () => <Image src="Skills/Languages/Js.svg" alt="Python" width={28} height={28} />, level: 85 },
     { title: 'Go', icon: () => <Image src="Skills/Languages/Go.svg" alt="Go" width={28} height={28} />, level: 80 },
     { title: 'TypeScript', icon: () => <Image src="Skills/Languages/Ts.svg" alt="TypeScript" width={28} height={28} />, level: 85 },
-    { title: 'MIPS', icon: () => <span className="text-white font-mono">MIPS</span>, level: 75 },
     { title: 'Kotlin', icon: () => <Image src="Skills/Languages/Kotlin.svg" alt="Kotlin" width={28} height={28} />, level: 70 },
-    { title: 'Arduino', icon: () => <Image src="Skills/Languages/Arduino.svg" alt="Arduino" width={28} height={28} />, level: 85 },
   ]
 
   return (

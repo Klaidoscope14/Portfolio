@@ -118,7 +118,7 @@ export default function HeroSection() {
               </span>
             </h1>
             <p className="text-2xl bg-gradient-to-r from-teal-600 to-violet-900 bg-clip-text text-transparent font-semibold">
-              Architecting seamless Systems, one optimized algorithm at a
+              A Full Stack Developer , architecting seamless Systems, one optimized algorithm at a
             </p>
             <p className="text-2xl flex justify-center align-middle mb-8 bg-gradient-to-r from-teal-600 to-violet-900 bg-clip-text text-transparent font-semibold">
               time

@@ -48,7 +48,7 @@ export default function AboutSection() {
             className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent"
           />
           <AnimatedText
-            text="I&apos;m a passionate Full Stack MERN developer with experience interning in a startup , Tradylytics. With experience creating both frontend and full stack projects utilising a variety of tech stack ranging from JavaScript , React to TypeScript and Next.js projects , with complex and secure backend systems created in Node.js and Express.js , supported by a concurrent database to handle active users . Apart from that , I also love spending time on Codeforces and LeetCode , doing challenging problems and increasing my capability to tackle real world optimization problems. I am also actively exploring the field of AI/ML . I also love learning more about the core concepts of Computer Science and Engineering , like Operating Systems and Networks."
+            text="I'm a full-stack MERN developer with hands-on experience through an internship at Tradylytics, where I contributed to both frontend and backend systems. I’ve built and maintained responsive user interfaces using JavaScript, React, and TypeScript, and developed robust backend services with Node.js and Express.js, often working with databases designed to support multiple active users efficiently . Outside of projects, I regularly solve algorithmic problems on platforms like Codeforces and LeetCode to improve my problem-solving skills. I’m also exploring AI and Machine Learning, and enjoy studying core areas of computer science such as Operating Systems and Computer Networks to strengthen my understanding of how systems work at a deeper level."
             className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
             delay={0.3}
           />
@@ -62,16 +62,13 @@ export default function AboutSection() {
           >
             <h3 className="text-2xl font-bold mb-6 text-cyan-400">My Journey</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Currently doing my B.Tech in Computer Science and Engineering from IIT Patna. Started with curiosity fascinated by the intersection of technology and creativity. Currently
-              interning in a startup, building everything from simple websites to complex
-              web applications and backend systems.
+            I'm currently pursuing a B.Tech in Computer Science and Engineering at IIT Patna. What began as a curiosity about the intersection of creativity and technology has evolved into a focused interest in full-stack web development and systems programming.
             </p>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Apart from Web development , I also practice competetive programming and Data Structures and Algorithm concepts. My current rating in Codeforces is 1416 , and i regularly like giving contests on LeetCode.
+            At present, I’m interning at a startup, where I work across the stack—building everything from clean, responsive websites to complex web applications with scalable backend systems. My tech stack includes JavaScript, React, TypeScript, Node.js, and MongoDB, among others.
             </p>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              I believe in continuous learning and staying ahead of the curve. When I&apos;m not coding, you&apos;ll find me
-              delving into CS Core (Networking Systems , Operating Systems and sometimes financial algorithms) , exploring new frameworks, contributing to open source, or experimenting with 3D graphics and animations. Hobbies include routine powerlifting.
+            I’m also deeply interested in core computer science concepts like Networking and Operating Systems, and I often spend time learning about financial algorithms, exploring new frameworks, contributing to open-source projects, or experimenting with 3D graphics and interactive visualizations.
             </p>
             <div className="flex flex-wrap gap-2">
               {["Front-end Development", "Back-end Development", "Competitive Programmer", "Leetcoder" ,"ML Enthusiast"].map((tech) => (
