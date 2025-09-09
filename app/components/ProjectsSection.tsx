@@ -17,7 +17,7 @@ export default function ProjectsSection() {
     {
       title: "SysHealth 🧬",
       description:
-        "An interface that allows users to view over 12 real-time system metrics (including CPU usage, memory consumption, and network throughput) in real time.",
+        "An interface that allows users to view over 12 real-time system metrics (including CPU usage and performance , I/O writes , memory consumption among many) in real time , through custom built APIs.",
       image: "/Projects/SysHealth.png",
       technologies: ["Tailwind CSS" ,"React", "TypeScript" , "Next.js" ,"Node.js" , "Express.js" , "RESTful APIs"],
       githubUrl: "https://github.com/Klaidoscope14/SysHealth",
@@ -43,7 +43,7 @@ export default function ProjectsSection() {
       title: "HOSCA 🎉",
       description:
         "The Official Site of the cultural wing of the student's Gymkhana , IIT Patna , The House Of Social and Cultural Affairs. Showcases info about all clubs under HOSCA , events, important acheivements, and initiatives to promote engagement with HOSCA on campus. Handled 1500+ users.",
-      image: "/Projects/E-Cell Alum Connect.png",
+      image: "/Projects/Hosca.png",
       technologies: ["Typescript" , "Next.js" , "JavaScript" , "Tailwind CSS"],
       liveUrl: "https://hosca.vercel.app/",
       githubUrl: "https://github.com/Klaidoscope14/HOSCA",

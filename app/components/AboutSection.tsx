@@ -15,7 +15,7 @@ export default function AboutSection() {
     {
       icon: Code,
       title: "Clean Code",
-      description: "Writing maintainable, scalable, and efficient code following best practices.",
+      description: "Writing maintainable, scalable, and efficient code following SOLID principles.",
     },
     {
       icon: Palette,
@@ -48,7 +48,7 @@ export default function AboutSection() {
             className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent"
           />
           <AnimatedText
-            text="I&apos;m a full-stack MERN developer with hands-on experience through an internship at Tradylytics, where I contributed to both frontend and backend systems. I’ve built and maintained responsive user interfaces using JavaScript, React, and TypeScript, and developed robust backend services with Node.js and Express.js, often working with databases designed to support multiple active users efficiently . Outside of projects, I regularly solve algorithmic problems on platforms like Codeforces and LeetCode to improve my problem-solving skills. I’m also exploring AI and Machine Learning, and enjoy studying core areas of computer science such as Operating Systems and Computer Networks to strengthen my understanding of how systems work at a deeper level."
+            text="I&apos;m a full-stack MERN developer also having prior experience through an internship . I regularly solve coding problems on platforms like Codeforces and LeetCode to hone my problem-solving skills. I’m also exploring the growing field of AI and Machine Learning, and enjoy studying core areas of computer science such as Operating Systems and Computer Networks to strengthen my understanding of how systems work at a deeper level."
             className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
             delay={0.3}
           />
@@ -65,13 +65,13 @@ export default function AboutSection() {
             Currently pursuing a B.Tech in Computer Science and Engineering at IIT Patna. What began as a curiosity about the intersection of creativity and technology has evolved into a focused interest in full-stack web development and systems programming.
             </p>
             <p className="text-gray-300 mb-6 leading-relaxed">
-            At present, I&apos;m interning at a startup, where I work across the stack—building everything from clean, responsive websites to complex web applications with scalable backend systems. My tech stack includes JavaScript, React, TypeScript, Node.js, and MongoDB, among others.
+            I also have prior experience interning at a startup, where I worked across the stack—rolling out key UI upgrades to adding and implementing new backend features. My tech stack includes JavaScript, React, TypeScript, Node.js, and MongoDB, among others.
             </p>
             <p className="text-gray-300 mb-6 leading-relaxed">
             I&apos;m also deeply interested in core computer science concepts like Networking and Operating Systems, and I often spend time learning about financial algorithms, exploring new frameworks, contributing to open-source projects, or experimenting with 3D graphics and interactive visualizations.
             </p>
             <div className="flex flex-wrap gap-2">
-              {["Front-end Development", "Back-end Development", "Competitive Programmer", "Leetcoder" ,"ML Enthusiast"].map((tech) => (
+              {["Front-end Developer", "Back-end Developer", "Competitive Programmer", "Leetcoder" ,"ML Enthusiast"].map((tech) => (
                 <Badge key={tech} variant="secondary" className="bg-purple-500/20 text-purple-300 border-purple-500/30">
                   {tech}
                 </Badge>

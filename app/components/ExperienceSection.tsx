@@ -11,31 +11,16 @@ export default function ExperienceSection() {
 
   const experiences = [
     {
-      title: "Web Developmnet Head",
-      company: "Entrepreneurship Cell , IIT Patna",
-      location: "IIT Patna",
-      period: "May 2025",
-      description:
-        "Leading development of a scalable E-Cell site using React , Next.js , Node.js , Express.js. Cooridnating junior developers and architecting scalable and responsive solutions.",
-      achievements: [
-        "Creted an E-Cell Alumni Portal using Three.js , React , Next.js.",
-        "Leading a team of 4 developers on multiple projects imapctin growth and outreach of E-Cell.",
-        "Conducted Debugging Operations on frontend of different websites of E-Cell."
-      ],
-      technologies: ["Tailwind CSS" , "JavaScript" , "Three.js" ,"TypeScript" , "React", "Node.js" , "Express.js" , "Airtable"],
-      link: "https://ecell.iitp.ac.in/",
-    } ,
-    {
       title: "Full-Stack Developer",
       company: "Tradylytics",
       location: "Agra , India",
-      period: "May 2025",
+      period: "May - July 2025",
       description:
-        "Working on the frontend of a web application that allows users to analyze stock market data and make investment decisions. ",
+        "Working on a site that allows users to analyze stock market data , take inputs from the users to convert it into some meaningful response and make investment decisions. ",
       achievements: [
-        "Worked on the frontend of a web application that allows users to analyze stock market data and make investment decisions.",
-        "Worked on the backend of a web application that allows users to analyze stock market data and make investment decisions.",
-        "Worked on the deployment of a web application that allows users to analyze stock market data and make investment decisions.",
+        "Worked on the frontend of the main site , rolling out key UI features by revamping and renovating the key UI Components on the site.",
+        "Integrated a form on the site wherein the user can input their trade data , if they want to enter their trades manually.",
+        "Worked on an API endpoint using Multer which allowed the backend to read and fetch excel files from the frontend , where the data was converted into a strcutured format and displayed in the frontend , along with being stored in the database.",
       ],
       technologies: ["Sass" , "Material UI" , "Shimmer UI", "React", "TypeScript" ,"Node.js"],
       link: "https://www.tradylytics.in/",
@@ -63,20 +48,15 @@ export default function ExperienceSection() {
         </motion.div>
 
         <div className="relative">
-          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyan-500 via-purple-500 to-pink-500" />
-
           <div className="space-y-12">
             {experiences.map((experience, index) => (
               <motion.div
                 key={experience.company}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                className={`relative flex items-center ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
+                animate={isInView ? { opacity: 1} : {}}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+                className={`relative flex flex-col justify-center items-center`}
               >
-                <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full border-4 border-black z-10" />
-
-                <div className={`w-full md:w-1/2 ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"} ml-12 md:ml-0`}>
+                <div className={`w-full ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"} ml-12 md:ml-0`}>
                   <FloatingCard delay={index * 0.1}>
                     <div className="space-y-4">
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
@@ -142,7 +122,7 @@ export default function ExperienceSection() {
         >
           <p className="text-gray-300 mb-6">Want to know more about my professional journey?</p>
           <motion.a
-            href="https://drive.google.com/drive/folders/1dp2fC4dKi6a1XiPHAx9VKNROvpDjeEm2"
+            href="https://drive.google.com/file/d/1t8hXInrGPFR-1VhK4pZB_t0UE0nkV48F/view?usp=sharing"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-lg hover:from-cyan-600 hover:to-purple-600 transition-all duration-300"
