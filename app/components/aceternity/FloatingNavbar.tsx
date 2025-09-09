@@ -77,7 +77,7 @@ export default function FloatingNavbar() {
 
                     <item.icon className="w-4 h-4 sm:w-5 sm:h-5 relative z-10" />
 
-                    <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden sm:block">
+                    <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden sm:block">
                       <div className="bg-black/90 text-white text-xs px-2 py-1 rounded whitespace-nowrap">
                         {item.name}
                       </div>
