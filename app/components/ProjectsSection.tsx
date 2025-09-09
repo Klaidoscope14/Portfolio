@@ -31,13 +31,22 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/Klaidoscope14/Chatify",
     },
     {
-      title: "E-Cell Alumni Connect 🎓",
+      title: "E-Cell 🎓",
       description:
-        "An outreach platform that allows alumni of the college to connect with E-Cell, IIT Patna. From here , they can participate in guest talks , workshops and increase interaction with the students. Handled 200+ users.",
+        "The Official Site of Entrepreneurship Cell , IIT Patna. Disseminates information about E-Cell's initiatives, events, and resources to students, faculty, and the broader community. Handled 1000+ users.",
       image: "/Projects/E-Cell Alum Connect.png",
       technologies: ["Tailwind CSS" , "Three.js" , "JavaScript", "React", "Airtable" , "Vercel"],
       liveUrl: "https://e-cell-alumni-connect.vercel.app/",
       githubUrl: "https://github.com/Klaidoscope14/E-Cell-Alumni-Connect",
+    },
+    {
+      title: "HOSCA 🎉",
+      description:
+        "The Official Site of the cultural wing of the student's Gymkhana , IIT Patna , The House Of Social and Cultural Affairs. Showcases info about all clubs under HOSCA , events, important acheivements, and initiatives to promote engagement with HOSCA on campus. Handled 1500+ users.",
+      image: "/Projects/E-Cell Alum Connect.png",
+      technologies: ["Typescript" , "Next.js" , "JavaScript" , "Tailwind CSS"],
+      liveUrl: "https://hosca.vercel.app/",
+      githubUrl: "https://github.com/Klaidoscope14/HOSCA",
     }
   ]
 
