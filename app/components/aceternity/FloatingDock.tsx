@@ -89,6 +89,7 @@ export function LanguageDock({ className }: LanguageDockProps) {
     { title: 'C', icon: () => <Image src="Skills/Languages/C.svg" alt="C" width={28} height={28} />, level: 90 },
     { title: 'C++', icon: () => <Image src="Skills/Languages/C++.svg" alt="C++" width={28} height={28} />, level: 85 },
     { title: 'Python', icon: () => <Image src="Skills/Languages/Python.svg" alt="Python" width={28} height={28} />, level: 95 },
+    { title: 'Java', icon: () => <Image src="Skills/Languages/Java.svg" alt="Java" width={28} height={28} />, level: 70 },
     { title: 'JavaScript', icon: () => <Image src="Skills/Languages/Js.svg" alt="Python" width={28} height={28} />, level: 85 },
     { title: 'TypeScript', icon: () => <Image src="Skills/Languages/Ts.svg" alt="TypeScript" width={28} height={28} />, level: 85 },
     { title: 'Kotlin', icon: () => <Image src="Skills/Languages/Kotlin.svg" alt="Kotlin" width={28} height={28} />, level: 70 },

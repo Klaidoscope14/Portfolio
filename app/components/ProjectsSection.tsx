@@ -93,7 +93,7 @@ export default function ProjectsSection() {
             className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent"
           />
           <AnimatedText
-            text="This is the Projects Section!"
+            text="What I do when I get bored"
             className="text-xl text-gray-300 max-w-3xl mx-auto"
             delay={0.3}
           />
@@ -105,7 +105,7 @@ export default function ProjectsSection() {
           </TracingBeam>
           
           <div 
-            className="relative overflow-visible py-8"
+            className="relative overflow-hidden py-8"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}

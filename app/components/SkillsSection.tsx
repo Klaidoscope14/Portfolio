@@ -25,8 +25,7 @@ export default function SkillsSection() {
     { title: "HTML", icon: () => <Image src="Skills/Frontend/HTML.svg" alt="HTML" width={28} height={28} />, level: 98 },
     { title: "CSS", icon: () => <Image src="Skills/Frontend/CSS.svg" alt="CSS" width={28} height={28} />, level: 95 },
     { title: "Sass", icon: () => <Image src="Skills/Frontend/Sass.svg" alt="Sass" width={28} height={28} />, level: 88 },
-    { title: "Material UI", icon: () => <Image src="Skills/Frontend/MaterialUI.svg" alt="MUI" width={28} height={28} />, level: 90 },
-    { title: "Tailwind", icon: () => <Image src="Skills/Frontend/TailwindCSS.svg" alt="Tailwind" width={28} height={28} />, level: 92 },
+    { title: "Tailwind CSS", icon: () => <Image src="Skills/Frontend/TailwindCSS.svg" alt="Tailwind" width={28} height={28} />, level: 92 },
     { title: "Three.js", icon: () => <Image src="Skills/Frontend/threejs.svg" alt="Three.js" width={28} height={28} />, level: 85 },
     { title: "React", icon: () => <Image src="Skills/Frontend/React.svg" alt="React" width={28} height={28} />, level: 95 },
     { title: "Next.js", icon: () => <Image src="Skills/Frontend/nextjs.svg" alt="Next.js" width={28} height={28} />, level: 88 },
@@ -48,8 +47,8 @@ export default function SkillsSection() {
     { title: "Figma", icon: () => <Image src="Skills/Tools/Figma.svg" alt="Figma" width={28} height={28} />, level: 85 },
     { title: "Android Studio", icon: () => <Image src="Skills/Tools/Android.svg" alt="Android Studio" width={28} height={28} />, level: 78 } ,
     { title: "Firebase", icon: () => <Image src="Skills/Tools/Firebase.svg" alt="Firebase" width={28} height={28} />, level: 80 } ,
-    { title: "AWS", icon: () => <Image src="Skills/Tools/AWS.svg" alt="AWS" width={28} height={28} />, level: 80 } ,
     { title: "Postman", icon: () => <Image src="Skills/Tools/Postman.svg" alt="Postman" width={28} height={28} />, level: 85 } ,
+    { title: "AWS", icon: () => <Image src="Skills/Tools/AWS.svg" alt="AWS" width={28} height={28} />, level: 80 } ,
     { title: "Google Cloud", icon: () => <Image src="Skills/Tools/GoogleCloud.svg" alt="Google Cloud" width={28} height={28} />, level: 80 } ,
     { title: "Socket.io", icon: () => <Image src="Skills/Tools/Socket.svg" alt="Socket" width={28} height={28} />, level: 85 }
   ]
