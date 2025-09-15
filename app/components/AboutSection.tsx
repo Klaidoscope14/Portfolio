@@ -2,7 +2,7 @@
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import { Badge } from "@/components/ui/badge"
-import { Code, Palette, Zap, Globe, Linkedin, Instagram } from "lucide-react"
+import { Code, Palette, Zap, Globe, Linkedin } from "lucide-react"
 import FloatingCard from "./aceternity/FloatingCard"
 import AnimatedText from "./aceternity/AnimatedText"
 import Image from "next/image"
