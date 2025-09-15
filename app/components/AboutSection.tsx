@@ -112,7 +112,7 @@ export default function AboutSection() {
                       <Linkedin className="w-5 h-5 text-white" />
                     </div>
                   </motion.a>
-                  <motion.a
+                  {/* <motion.a
                     href="https://www.instagram.com/chad._.saagar"
                     whileHover={{ scale: 1.2, rotate: 5 }}
                     whileTap={{ scale: 0.9 }}
@@ -122,7 +122,7 @@ export default function AboutSection() {
                     <div className="relative">
                       <Instagram className="w-5 h-5 text-white" />
                     </div>
-                  </motion.a>
+                  </motion.a> */}
                 </div>
               </div>
             </motion.div>
