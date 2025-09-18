@@ -10,8 +10,8 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Chaitanya Saagar",
   description:
-    "Portfolio of Chaitanya Saagar - Competitive Programmer , LeetCoder and Full-Stack Developer specializing in React, Three.js, and modern web development. Creating immersive digital experiences with cutting-edge technologies.",
-  keywords: "full-stack developer, react developer, three.js, typescript, web development, portfolio",
+    "Portfolio of Chaitanya Saagar - Competitive Programmer , LeetCoder and Full-Stack Developer specializing in modern web development.",
+  keywords: "full-stack developer, web development, portfolio",
   authors: [{ name: "Chaitanya Saagar" }],
   openGraph: {
     title: "Chaitanya Saagar",

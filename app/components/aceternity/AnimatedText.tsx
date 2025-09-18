@@ -1,5 +1,4 @@
 "use client"
-
 import { motion } from "framer-motion"
 
 interface AnimatedTextProps {
@@ -10,7 +9,6 @@ interface AnimatedTextProps {
 
 export default function AnimatedText({ text, className = "", delay = 0 }: AnimatedTextProps) {
   const words = text.split(" ")
-
   return (
     <motion.div 
       className={className}

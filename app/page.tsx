@@ -27,17 +27,13 @@ export default function Portfolio() {
       </motion.div>
 
       <FloatingNavbar />
-
         <HeroSection />
         <TracingBeam>
-        <AboutSection />
-
-        <ExperienceSection />
-
-        <SkillsSection />
-        <ProjectsSection />
-      </TracingBeam>
-
+          <AboutSection />
+          <ExperienceSection />
+          <SkillsSection />
+          <ProjectsSection />
+        </TracingBeam>
         <ContactSection />
     </div>
   )

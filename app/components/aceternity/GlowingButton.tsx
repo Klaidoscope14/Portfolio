@@ -33,7 +33,6 @@ export default function GlowingButton({
         } ${className}`}
         disabled={disabled}
       >
-        {/* Glow effect */}
         <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-0 group-hover:opacity-75 transition duration-1000 group-hover:duration-200" />
         <span className="relative z-10">{children}</span>
       </Button>
