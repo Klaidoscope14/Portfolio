@@ -22,7 +22,7 @@ export default function ExperienceSection() {
         "Integrated a form on the site wherein the user can input their trade data , if they want to enter their trades manually.",
         "Worked on an API endpoint using Multer which allowed the backend to read and fetch excel files from the frontend , where the data was converted into a strcutured format and displayed in the frontend , along with being stored in the database.",
       ],
-      technologies: ["Sass" , "Material UI" , "Shimmer UI", "React", "TypeScript" ,"Node.js"],
+      technologies: ["Sass", "React", "TypeScript" ,"Node.js"],
       link: "https://www.tradylytics.in/",
     }
   ]
