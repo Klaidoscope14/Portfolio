@@ -11,11 +11,11 @@ export function LampDemo() {
         <SparklesCore
           id="tsparticles"
           background="transparent"
-          minSize={0.4}
+          minSize={0.5}
           maxSize={1}
           particleDensity={500}
           className="w-full h-[40vh]"
-          particleColor="#FFFFFF"
+          particleColor="#8F8EF0"
         />
       </div>
       <motion.h1
