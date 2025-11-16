@@ -64,16 +64,6 @@ export default function ContactSection() {
       value: "saagarchaitanya80@gmail.com",
       href: "mailto:saagarchaitanya80@gmail.com",
     },
-    {
-      icon: Phone,
-      title: "Phone",
-      value: "+91 6204 250 124",
-    },
-    {
-      icon: MapPin,
-      title: "Location",
-      value: "Patna, India",
-    },
   ]
 
   return (
@@ -192,17 +182,19 @@ export default function ContactSection() {
                   className="w-full h-10 md:h-11"
                   disabled={isLoading}
                 >
-                  {isLoading ? (
-                    <>
-                      <Loader2 className="w-4 h-4 md:w-5 md:h-5 mr-2 animate-spin" />
-                      Sending...
-                    </>
-                  ) : (
-                    <>
-                      <Send className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-                      Send Message
-                    </>
-                  )}
+                  <div className="flex items-center justify-center gap-2">
+                    {isLoading ? (
+                      <>
+                        <Loader2 className="w-4 h-4 md:w-5 md:h-5 mr-2 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-4 h-4 md:w-5 md:h-5" /> 
+                        Send Message
+                      </>
+                    )}
+                  </div>
                 </GlowingButton>
               </form>
             </FloatingCard>
