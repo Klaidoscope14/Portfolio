@@ -15,7 +15,7 @@ export default function ProjectsSection() {
 
   const projects = [
     {
-      title: "SysHealth 🧬",
+      title: "SysHealth",
       description:
         "An interface that allows users to view over 12 real-time system metrics (including CPU usage and performance , I/O writes , memory consumption among many) in real time , through custom built APIs.",
       image: "/Projects/SysHealth.png",
@@ -23,7 +23,15 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/Klaidoscope14/SysHealth",
     },
     {
-      title: "Chatify 💻",
+      title: "Aegis",
+      description:
+        "A password manager(CRUD App) that securely stores and manages user passwords. Features include password generation, encryption, and organization. Uses libsodium encryption to protect all credentials with end-to-end security. Uses Argon2id and XChaCha20-Poly1305 for storing credentials.",
+      image: "/Projects/Aegis.png",
+      technologies: ["C++" , "Qt6" , "CMake" , "Shell"],
+      githubUrl: "https://github.com/Klaidoscope14/Aegis",
+    },
+    {
+      title: "Chatify",
       description:
         "A real-time chat application that allows users to send and receive messages in real time. Employs Socket.io for real-time comms and MongoDB for data storage.",
       image: "/Projects/Chatify.png",
@@ -31,7 +39,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/Klaidoscope14/Chatify",
     },
     {
-      title: "E-Cell 🎓",
+      title: "E-Cell",
       description:
         "The Official Site of Entrepreneurship Cell , IIT Patna. Disseminates information about E-Cell's initiatives, events, and resources to students, faculty, and the broader community. Handled 1000+ users.",
       image: "/Projects/E-Cell Alum Connect.png",
@@ -40,7 +48,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/Klaidoscope14/E-Cell-Alumni-Connect",
     },
     {
-      title: "HOSCA 🎉",
+      title: "HOSCA",
       description:
         "The Official Site of the cultural wing of the student's Gymkhana , IIT Patna , The House Of Social and Cultural Affairs. Showcases info about all clubs under HOSCA , events, important acheivements, and initiatives to promote engagement with HOSCA on campus. Handled 1500+ users.",
       image: "/Projects/Hosca.png",
