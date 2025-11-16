@@ -94,7 +94,7 @@ export default function ExperienceSection() {
                       </div>
 
                       <div>
-                        <h4 className="font-semibold text-white mb-2">Technologies:</h4>
+                        <h4 className="font-semibold text-white mb-2">Technologies used:</h4>
                         <div className="flex flex-wrap gap-2">
                           {experience.technologies.map((tech) => (
                             <span
@@ -122,7 +122,7 @@ export default function ExperienceSection() {
         >
           <p className="text-gray-300 mb-6">Want to know more about my professional journey?</p>
           <motion.a
-            href="https://drive.google.com/file/d/1t8hXInrGPFR-1VhK4pZB_t0UE0nkV48F/view?usp=sharing"
+            href="https://drive.google.com/drive/folders/1Tv9ErQYf5PDxMITKhF5wZn80yk4uai2x"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-lg hover:from-cyan-600 hover:to-purple-600 transition-all duration-300"
